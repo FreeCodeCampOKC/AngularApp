@@ -1,0 +1,30 @@
+{
+  "name": "Angular Chat App",
+  "description": "A Social chat app that purges data after 48 hours, OAuth and socket.io",
+  "main": "./server/server.js",
+  "authors": [
+    "Daniel Ashcraft"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chat",
+    "app",
+    "social",
+    "socketio",
+    "oauth"
+  ],
+  "homepage": "https://github.com/FreeCodeCampOKC/AngularApp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-socket-io": "^0.7.0",
+    "socket.io": "^1.7.2"
+  }
+}

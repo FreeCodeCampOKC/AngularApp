@@ -1,0 +1,73 @@
+{
+  "name": "Angular_Chat_App",
+  "version": "0.0.1",
+  "description": "An Angular Chat App build for Free Code Camp OKC",
+  "main": "server.js",
+  "scripts": {
+    "start": "grunt start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeCodeCampOKC/AngularApp.git"
+  },
+  "keywords": [
+    "chat",
+    "app",
+    "social",
+    "socketio",
+    "oauth"
+  ],
+  "author": "Daniel Ashcraft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FreeCodeCampOKC/AngularApp/issues"
+  },
+  "homepage": "https://github.com/FreeCodeCampOKC/AngularApp#readme",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-animate": "^1.5.9",
+    "angular-aria": "^1.5.9",
+    "angular-messages": "^1.5.9",
+    "angular-resource": "^1.5.9",
+    "angular-socket-io": "^0.7.0",
+    "angular-ui-router": "^0.3.2",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.2",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.7.0",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "path": "^0.12.7",
+    "socket.io": "^1.7.2",
+    "socket.io-client": "^1.7.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-livereload": "^0.1.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-karma": "^2.0.0",
+    "grunt-mocha": "^1.0.2",
+    "grunt-mocha-test": "^0.13.2",
+    "grunt-nodemon": "^0.4.2",
+    "grunt-open": "^0.2.3",
+    "jasmine": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-requirejs": "^1.1.0",
+    "mocha": "^3.2.0",
+    "requirejs": "^2.3.2",
+    "sinon": "^1.17.6",
+    "sinon-mongoose": "^1.3.0"
+  }
+}
