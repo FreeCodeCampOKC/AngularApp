@@ -3,7 +3,6 @@ A social chat app that purges data after 48 hours, OAuth and socket.io
 
 
 ##To Start
-
 *Clone the app into your directory
 *In the root directory use `npm install` to install required modules
 *Use the command `grunt` in the command line, to concat files and start server
