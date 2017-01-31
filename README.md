@@ -12,3 +12,6 @@ An Angular Chat App built for free code camp oklahoma city.
 ##File Tree
 The server is located in the `/server` directory. </br>
 The front end files are located in `/public/` directory.
+
+##Angular Style Guide
+[Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
