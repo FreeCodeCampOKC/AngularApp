@@ -23,7 +23,7 @@ app.use(function(req, res, next) {
 
 
 app.use(morgan('dev'));
-app.use('/public', express.static(__dirname+ '../public'));
+app.use('/css', express.static('public/css'));
 /*app.use('/lib', intercept,express.static(__dirname+ '../node_modules'));*/
 app.use('/lib', intercept, express.static('public/bower_components'));
 function intercept(req,res,next){
