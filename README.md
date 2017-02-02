@@ -1,6 +1,11 @@
 # Angular Chat App
 An Angular Chat App built for free code camp oklahoma city.
 
+##Prerequisites
+
+* Install [Node](https://nodejs.org/en/)
+* Install [Grunt CLI](http://gruntjs.com/getting-started)
+* Install [Karma CLI](https://github.com/karma-runner/karma-cli)
 
 ##To Start
 
