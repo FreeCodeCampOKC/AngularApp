@@ -4,7 +4,7 @@
   "description": "An Angular Chat App build for Free Code Camp OKC",
   "main": "server.js",
   "scripts": {
-    "start": "grunt start"
+    "start": "grunt"
   },
   "repository": {
     "type": "git",

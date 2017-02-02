@@ -1,7 +1,7 @@
 {
-  "name": "Angular Chat App",
-  "description": "A Social chat app that purges data after 48 hours, OAuth and socket.io",
-  "main": "./server/server.js",
+  "name": "angular chat app",
+  "description": "Angular Chat App",
+  "main": "../server/server.js",
   "authors": [
     "Daniel Ashcraft"
   ],
@@ -25,6 +25,8 @@
   ],
   "dependencies": {
     "angular-socket-io": "^0.7.0",
-    "socket.io": "^1.7.2"
+    "angular": "^1.6.1",
+    "angular-ui-router": "ui-router#^0.4.2",
+    "socket.io-client": "^1.7.2"
   }
 }

@@ -25,14 +25,14 @@ app.use(function(req, res, next) {
 app.use(morgan('dev'));
 app.use('/public', express.static(__dirname+ '../public'));
 /*app.use('/lib', intercept,express.static(__dirname+ '../node_modules'));*/
-app.use('/lib', intercept, express.static(('bower_components')));
+app.use('/lib', intercept, express.static('public/bower_components'));
 function intercept(req,res,next){
 	console.log('the lib route is being requested');
 	next();
 }
 
 
-app.use('/', function (req, res) {
+app.get('/', function (req, res) {
   console.log('only the index file is being returned');
   res.sendFile('./index.html',{ root: path.join(__dirname, '../public/views') });
 })
@@ -63,8 +63,16 @@ server.on('listening', onListening);
 // for real time server
 
 io.on('connection', function(socket){
-	console.log('there was a connection!!!');
+	console.log('somebody connected: ',socket.id);
+  
+  io.emit('ping',{data:socket.id});
+  socket.on('x', function(data){
+    console.log('there was a pong and the data is: ',data);
+  })
 
+  socket.on('disconnect', function(socket){
+    console.log('there was a disconnect ', socket);
+  })  
 })
 
 
