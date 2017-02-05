@@ -1,0 +1,76 @@
+<style>
+  .login-wrapper{
+    width:700px;
+    height:500px;
+    border:2px solid black;
+    margin:12% auto;
+  }
+  .login-wrapper h2{
+    text-align:center;
+    font-size:2vw;
+  }
+  .login-wrapper label{
+    display:block;
+    font-size:1.5vw;
+    margin-top:20px;
+    margin-bottom:15px;
+  }
+  .login-wrapper input{
+    height:35px;
+    width:65%;
+  }
+  .centered-div{
+    padding-left:25%;
+    padding-top:5px;
+  }
+  .button-container{
+    text-align:right;
+    padding-right:10%;
+    padding-top:11%;
+  }
+  .btn-primary{
+    width:175px;
+    height:45px;
+    border-radius:10px;
+    border:1px solid #fff;
+  }
+  </style>
+
+  <div class="login-wrapper">
+  <h2>Registration</h2>
+    <div class="centered-div">  
+      <div>
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username">
+      </div>
+      <div>
+        <label for="unit">Unit</label>
+        <input type="email" placeholder="unit #" required>
+      </div>
+    </div>
+    <div class="button-container">
+      <a href="#"><button class="btn-primary">Register</button></a>
+    </div>
+  </div>
+
+  
+  <script>
+  var socket = io.connect('http://localhost:3000');
+    socket.on('ping',function(data){
+
+      console.log('recieved a ping and should be sending a pong...',data);
+      
+    })
+
+    socket.on('connect',function(){
+      console.log('we are connected!!!!');
+      pong();
+    })
+
+    function pong(){
+      console.log('pong is firing');
+      socket.emit('x',{data:'something'});
+    }
+
+
+  </script>

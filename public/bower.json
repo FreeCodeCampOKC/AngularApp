@@ -1,5 +1,5 @@
 {
-  "name": "angular chat app",
+  "name": "angularchatapp",
   "description": "Angular Chat App",
   "main": "../server/server.js",
   "authors": [

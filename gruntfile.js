@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= pkg.version %> */\n'
       },
       	js:{
-        	src: ['public/controllers/*.js','public/services/*.js'],
+        	src: ['public/app.js','public/routes.js','public/controllers/*.js','public/services/*.js'],
         	dest: 'public/js/<%= pkg.name %>.js',
         },
         css: {
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
     //concurrent stuffs
     concurrent:{
     	dev:{
-    		tasks:['nodemon','watch','mochaTest','open'],
+    		tasks:['nodemon','watch','concat','open'],
     	},
     	options: {
       		logConcurrentOutput: true,

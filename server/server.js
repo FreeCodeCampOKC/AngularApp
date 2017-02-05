@@ -24,6 +24,8 @@ app.use(function(req, res, next) {
 
 app.use(morgan('dev'));
 app.use('/css', express.static('public/css'));
+app.use('/js', express.static('public/js'));
+app.use('/views', express.static('public/views'));
 /*app.use('/lib', intercept,express.static(__dirname+ '../node_modules'));*/
 app.use('/lib', intercept, express.static('public/bower_components'));
 function intercept(req,res,next){
@@ -32,7 +34,7 @@ function intercept(req,res,next){
 }
 
 
-app.get('/', function (req, res) {
+app.get('/*', function (req, res) {
   console.log('only the index file is being returned');
   res.sendFile('./index.html',{ root: path.join(__dirname, '../public/views') });
 })
