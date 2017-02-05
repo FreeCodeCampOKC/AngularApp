@@ -14,6 +14,7 @@ An Angular Chat App built for Free Code Camp Oklahoma City.
 
 * [Fork](https://help.github.com/articles/fork-a-repo/) the repository, and create a local clone of your fork
 * In the root directory (the folder containing the package.json file), run `npm install` to install required modules
+* In the /public directory run `bower install` to install the required front end libraries
 * Run the `grunt` command in the command line. This will run the following tasks:
     * Concat files (combine all the source code into a single JavaScript file)
     * Start server
