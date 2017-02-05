@@ -4,8 +4,10 @@ An Angular Chat App built for free code camp oklahoma city.
 ##Prerequisites
 
 * Install [Node](https://nodejs.org/en/)
-* Install [Grunt CLI](http://gruntjs.com/getting-started)
-* Install [Karma CLI](https://github.com/karma-runner/karma-cli)
+* These steps might require `sudo` because they are global:
+    * Update npm by running `npm update -g npm`
+    * Run `npm install -g grunt-cli` to install [Grunt CLI](http://gruntjs.com/getting-started)
+    * Run `npm install -g karma-cli` to install [Karma CLI](https://github.com/karma-runner/karma-cli)
 
 ##To Start
 
