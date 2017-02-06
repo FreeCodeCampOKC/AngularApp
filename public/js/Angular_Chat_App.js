@@ -1,8 +1,11 @@
 /*! Angular_Chat_App 0.0.1 */
 (function () {
 	angular.module('app', [
-		'ui.router'
+		'ui.router',
+		'ngMaterial'
 	]);
+
+
 
 })();
 (function () {
@@ -11,7 +14,6 @@
     angular
         .module('app')
         .config(router);
-
 
         router.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
@@ -25,16 +27,12 @@
             });
             
             $stateProvider
-              .state('main', {
+              .state('main', {  
                   url: "/login",
                   templateUrl:"views/login.html",
-                  controller:"mainCtrl"   
-              })
-
-
+                  controller:"mainCtrl"
+              })          
         }
-
-
 })();
 (function () {
     'use strict';
@@ -46,6 +44,13 @@
 
     function mainCtrl($scope) {
         console.log("MainCtrl functional!");
+
+
+        $scope.names =[];
+
+        $scope.addName = function(name){	
+        	$scope.names.push(name);
+        }
 
 
     }

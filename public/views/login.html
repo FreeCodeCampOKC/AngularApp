@@ -36,7 +36,7 @@
   }
   </style>
 
-  <div class="login-wrapper">
+  <!-- <div class="login-wrapper">
   <h2>Registration</h2>
     <div class="centered-div">  
       <div>
@@ -51,7 +51,31 @@
     <div class="button-container">
       <a href="#"><button class="btn-primary">Register</button></a>
     </div>
-  </div>
+  </div> -->
+
+
+
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column">
+      <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+            <input type="email" ng-model="name" ng-change="addName(name)">
+            <span class="md-subhead">Large</span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-lg card-media" ng-repeat="name in names">
+              <h2>{{name}}</h2>
+            </div>
+          </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ng-click="">Add Name</md-button>
+          <md-button>Action 2</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </md-content>
 
   
   <script>

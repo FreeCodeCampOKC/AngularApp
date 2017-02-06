@@ -1,6 +1,9 @@
 (function () {
 	angular.module('app', [
-		'ui.router'
+		'ui.router',
+		'ngMaterial'
 	]);
+
+
 
 })();

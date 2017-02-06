@@ -5,7 +5,6 @@
         .module('app')
         .config(router);
 
-
         router.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 
         function router($stateProvider, $urlRouterProvider,$locationProvider) {
@@ -18,14 +17,10 @@
             });
             
             $stateProvider
-              .state('main', {
+              .state('main', {  
                   url: "/login",
                   templateUrl:"views/login.html",
-                  controller:"mainCtrl"   
-              })
-
-
+                  controller:"mainCtrl"
+              })          
         }
-
-
 })();

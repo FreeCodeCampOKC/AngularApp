@@ -10,6 +10,13 @@
         console.log("MainCtrl functional!");
 
 
+        $scope.names =[];
+
+        $scope.addName = function(name){	
+        	$scope.names.push(name);
+        }
+
+
     }
 
 
