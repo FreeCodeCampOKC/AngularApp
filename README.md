@@ -3,16 +3,20 @@ An Angular Chat App built for Free Code Camp Oklahoma City.
 
 ##Prerequisites
 
+* Install [Git](https://www.atlassian.com/git/tutorials/install-git)
 * Install [Node](https://nodejs.org/en/)
     * You can verify whether node is installed by running `node -v`
     * This will return the version number if it is installed, and an error if it isn't.
-* Run `sudo npm update -g npm` to update [npm](https://www.npmjs.com/)
-* Run `sudo npm install -g grunt-cli` to install [Grunt CLI](http://gruntjs.com/getting-started)
-* Run `sudo npm install -g karma-cli` to install [Karma CLI](https://github.com/karma-runner/karma-cli)
+* If these commands don't work, try adding `sudo ` to the beginning of them:
+    * Run `npm update -g npm` to update [npm](https://www.npmjs.com/)
+    * Run `npm install -g grunt-cli` to install [Grunt CLI](http://gruntjs.com/getting-started)
+    * Run `npm install -g karma-cli` to install [Karma CLI](https://github.com/karma-runner/karma-cli)
+    * Run `npm install -g bower` to install [Bower](https://bower.io/)
 
 ##To Start
 
 * [Fork](https://help.github.com/articles/fork-a-repo/) the repository, and create a local clone of your fork
+* Run `bower install` in the `/public` directory
 * In the root directory (the folder containing the package.json file), run `npm install` to install required modules
 * In the /public directory run `bower install` to install the required front end libraries
 * Run the `grunt` command in the command line. This will run the following tasks:
