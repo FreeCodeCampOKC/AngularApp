@@ -1,3 +1,22 @@
-// services/
+(function () {
+    'use strict';
 
-console.log('this is service file is working');
+    angular.module('app').factory('chat', chatFactory);
+
+    chatFactory.$inject =['socketFactory'];
+
+    function chatFactory(socketFactory) {
+        console.log("Chat factory is functional!");
+
+       var myIoSocket = io.connect('http://localhost:3000');
+
+  	   var chat = socketFactory({
+       	ioSocket: myIoSocket
+       });
+
+       return chat;
+
+
+	}
+})
+();

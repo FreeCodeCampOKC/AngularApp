@@ -1,7 +1,8 @@
 (function () {
 	angular.module('app', [
 		'ui.router',
-		'ngMaterial'
+		'ngMaterial',
+		'btford.socket-io'
 	]);
 
 

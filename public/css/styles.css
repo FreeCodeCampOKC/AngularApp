@@ -3,3 +3,40 @@ body {
 	margin:0px;
 	padding:0px;
 }
+
+
+.login-wrapper{
+    width:700px;
+    height:500px;
+    border:2px solid black;
+    margin:12% auto;
+  }
+  .login-wrapper h2{
+    text-align:center;
+    font-size:2vw;
+  }
+  .login-wrapper label{
+    display:block;
+    font-size:1.5vw;
+    margin-top:20px;
+    margin-bottom:15px;
+  }
+  .login-wrapper input{
+    height:35px;
+    width:65%;
+  }
+  .centered-div{
+    padding-left:25%;
+    padding-top:5px;
+  }
+  .button-container{
+    text-align:right;
+    padding-right:10%;
+    padding-top:11%;
+  }
+  .btn-primary{
+    width:175px;
+    height:45px;
+    border-radius:10px;
+    border:1px solid #fff;
+  }

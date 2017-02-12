@@ -67,8 +67,20 @@ io.on('connection', function(socket){
 	console.log('somebody connected: ',socket.id);
   
   io.emit('ping',{data:socket.id});
-  socket.on('x', function(data){
+
+  socket.on('yes', function(data){
     console.log('there was a pong and the data is: ',data);
+  })
+
+  socket.on('login', function(data){
+    console.log('there was a login event');
+    console.log('backend recieved this! ', data.data); 
+
+    socket.username = data.data.username;
+    socket.unit = data.data.unit;
+
+    console.log(socket.username);
+
   })
 
   socket.on('disconnect', function(socket){
