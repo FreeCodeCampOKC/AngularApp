@@ -17,10 +17,10 @@
             });
             
             $stateProvider
-              .state('main', {  
+              .state('login', {  
                   url: "/login",
                   templateUrl:"views/login.html",
-                  controller:"mainCtrl"
+                  controller:"loginCtrl"
               })
               .state('mainchat', { 
                   abstract:true, 
@@ -28,8 +28,8 @@
                   params: {
                     data: null
                   },
-                  templateUrl:"views/main-chat.html",
-                  controller:"mainChatCtrl"
+                  templateUrl:"views/mainChat.html",
+                  controller:"mainCtrl"
               })       
               .state('mainchat.generalchat', {
                   url:'/generalChat',

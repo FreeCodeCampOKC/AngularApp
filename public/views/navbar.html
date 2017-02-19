@@ -1,3 +1,26 @@
-<div>
-	<h1>This is the navbar</h1>
+<div class="left-nav">
+	<div class="top">
+		<img ng-src="{{$ctrl.profileimage}}" class="profile-image" alt="Profile IMG">
+		<div class="text-block">
+		<span class="name">{{$ctrl.username}}</span>
+		<md-icon md-font-set="material-icons">arrow_drop_down</md-icon>
+		</div>
+	</div>
+	<div class="bottom" layout="column">
+		<md-card ng-repeat="user in $ctrl.presence track by $index" >
+	        <md-card-title ng-if="user.username !== $ctrl.username">
+	        <md-card-title-media>
+	            <div class="md-media-sm card-media">
+	            	<img ng-src="{{user.profileimage}}" alt="Image">
+	            </div>
+	          </md-card-title-media>
+	          <md-card-title-text>
+	            <span class="md-headline">{{user.username}}</span>
+	            <span class="md-subhead">Small</span>
+	          </md-card-title-text>
+	          
+	        </md-card-title>
+      </md-card>
+
+	</div>
 </div>

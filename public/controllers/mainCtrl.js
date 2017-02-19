@@ -4,37 +4,31 @@
     angular.module('app').controller('mainCtrl', mainCtrl);
 
 
-    mainCtrl.$inject = ['$scope','chat','$state'];
+    mainCtrl.$inject = ['$scope','chat','$stateParams'];
 
-    function mainCtrl($scope,chat,$state) {
-        console.log("MainCtrl functional!");
+    function mainCtrl($scope,chat,$stateParams) {
+        console.log("mainCtrl functional!");
+        console.log('stateparams for main ctrl= ',$stateParams);
+        $scope.channel = $stateParams.data.channel;
 
 
-        $scope.username = "";
-        $scope.unit = "";
 
-        $scope.names =[];
+        $scope.thischat = '';
 
-        $scope.addName = function(name){	
-        	$scope.names.push(name);
-        }	
-        console.log('socket',chat);
-    	
+        $scope.submitChat = function(msg){
+            console.log('submit chat was submitted with',msg);
+            let data ={
+                username:$stateParams.data.username,
+                profileimage:$stateParams.data.imagesrc,
+                date: new Date(),
+                msg:msg
+            }
+            $scope.thischat = '';
 
-    	chat.on('connect',function(){
-      		console.log('we are connected!!!!');
-    	});
+            chat.emit('chat',data);
 
-    	$scope.login = function(username,unit){
-    		console.log('this is firing');
-    		console.log('username and unit outside of chat emit', username+ ' '+unit);
-    		var obj= {
-    			username:username,
-    			unit:unit
-    		}
-    		chat.emit('login',{data:obj})
-    		$state.go('mainchat.generalchat',{data:obj});
-    	}
+        }
+
 
 
     }

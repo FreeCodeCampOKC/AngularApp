@@ -37,7 +37,7 @@
     "ejs": "~2.3.3",
     "express": "^4.14.0",
     "fs": "0.0.1-security",
-    "lodash": "^4.17.2",
+    "lodash": "^4.17.4",
     "mongodb": "^2.2.11",
     "mongoose": "^4.7.0",
     "morgan": "^1.7.0",

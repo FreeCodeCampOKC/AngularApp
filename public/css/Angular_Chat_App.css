@@ -2,41 +2,110 @@
 body {
 	margin:0px;
 	padding:0px;
+	overflow-x: hidden;
+}
+.loginBox {
+  max-width:  90%;
+  width: 500px
+}
+
+.stretch input  {
+  width: 100%
+}
+
+.left-nav{
+	min-height:99vh;
+	width:20vw;
+	min-width:150px;
+	background-color:#fafafa;
+	box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.24), 0 0 16px 0 rgba(0, 0, 0, 0.18);
+}
+
+.left-nav .top{
+	text-align:left;
+	width:20vw;
+	min-width:150px;
+	background-color:#4FC1E9;
+	height:89px;
+	max-height:89px;
+}
+
+.left-nav .top .profile-image{
+	display:inline-block;
+	border-radius:50%;
+	max-width:23%;
+	height:auto;
+	padding-top:5px;
+	padding-left:10px;
+}
+
+.left-nav .top .text-block{
+	display: inline-block;
+	position: absolute;
+	padding-left: 15px;
+	top: 28px;
+}
+
+.left-nav .top .name{
+	display:inline-block;
+	font-size:18px;
+	font-family:Roboto;
+	line-height:1.54;
+	padding-bottom:5px;
+}
+
+.left-nav .top .text-block .material-icons{
+	padding-bottom:4px;
+}
+
+.left-nav .bottom{
+	text-align:left;
+	width:20vw;
+	min-width:150px;
+	max-height:70vh;
+	overflow-y: scroll;
+}
+
+md-card md-card-title md-card-title-media .md-media-sm {
+	padding-right:20px;
 }
 
 
-.login-wrapper{
-    width:700px;
-    height:500px;
-    border:2px solid black;
-    margin:12% auto;
-  }
-  .login-wrapper h2{
-    text-align:center;
-    font-size:2vw;
-  }
-  .login-wrapper label{
-    display:block;
-    font-size:1.5vw;
-    margin-top:20px;
-    margin-bottom:15px;
-  }
-  .login-wrapper input{
-    height:35px;
-    width:65%;
-  }
-  .centered-div{
-    padding-left:25%;
-    padding-top:5px;
-  }
-  .button-container{
-    text-align:right;
-    padding-right:10%;
-    padding-top:11%;
-  }
-  .btn-primary{
-    width:175px;
-    height:45px;
-    border-radius:10px;
-    border:1px solid #fff;
-  }
+.top-chat-banner {
+	position:absolute;
+	top:0;
+	left:20.1vw;
+	width:80vw;
+	padding-left:23px;
+	margin-right:-23px;
+	background-color:#4FC1E9;
+	height:89px;
+	min-height:89px;
+}
+
+
+.main-chat {
+	position: absolute;
+	top: 89px;
+	left: 20.1vw;
+	background: #fafafa;
+	height: 70vh;
+	overflow-y: scroll;
+	width: 80vw;
+	padding-left: 23px;
+	margin-right: -23px;
+}
+
+.bottom-chat-area {
+	position: absolute;
+	bottom: 0;
+	left: 20.1vw;
+	background-color:#CCD1D9;
+	height: 20vh;
+	width: 80vw;
+	max-width:80vw;
+	padding-left: 23px;
+	margin-right: -23px;
+}
+
+

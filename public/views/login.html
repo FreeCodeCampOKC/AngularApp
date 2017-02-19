@@ -1,20 +1,27 @@
 
-  <div class="login-wrapper">
-  <h2>Registration</h2>
-    <div class="centered-div"> 
-      <div>
-        <label for="username">Username</label>
-        <input type="text" placeholder="Username" ng-model="username">
+
+<div layout="column" layout-align="center center" layout-fill="layout-fill">
+  <div class="loginBox md-whiteframe-z1" layout="column">
+    <md-toolbar>
+      <h2 class="md-toolbar-tools"><span>Login</span></h2>
+    </md-toolbar>
+    <md-content class="md-padding" layout="column">
+      <md-input-container>
+        <label>Name</label>
+        <input type="text" ng-model="username"/>
+      </md-input-container>
+      <md-input-container>
+        <label>Img Src (https://something.com/image.png etc)</label>
+        <input type="text" ng-model="imagesrc"/>
+      </md-input-container>
+      <div layout="row" layout-align="center center" style="padding-top:20px">
+        
+        <div flex="flex"></div>
+        <md-button class="md-raised md-primary" ng-click="login(username,imagesrc)">Login</md-button>
       </div>
-      <div>
-        <label for="unit">Unit</label>
-        <input type="text" placeholder="unit #" required ng-model="unit">
-      </div>
-    </div>
-    <div class="button-container"> 
-      <md-button class="btn-primary" ng-click="login(username,unit)">Login</md-button>
-    </div> 
+    </md-content>
   </div>
+</div>
 
 
 

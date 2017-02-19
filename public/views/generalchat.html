@@ -1,3 +1,6 @@
-<div>
-	<h3>This is a subview!</h3>
+<div ng-repeat="chat in generalmessage">
+	<img ng-src="{{chat.profileimage}}" alt="Profile" height="100" width="125">
+	<p>{{chat.msg}}</p>
+	<p>{{chat.date}}</p>
 </div>
+

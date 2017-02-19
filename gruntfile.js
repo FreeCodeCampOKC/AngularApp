@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= pkg.version %> */\n'
       },
       	js:{
-        	src: ['public/app.js','public/routes.js','public/controllers/*.js','public/services/*.js'],
+        	src: ['public/app.js','public/routes.js','public/controllers/*.js','public/components/*.js','public/services/*.js'],
         	dest: 'public/js/<%= pkg.name %>.js',
         },
         css: {
@@ -22,8 +22,8 @@ module.exports = function(grunt) {
     //watch some of these files
     watch:{
     	js:{
-    		files:['gruntfile.js','public/controllers/*.js','public/services/*.js'],
-    		tasks:['jshint','concat:js','mochaTest'],
+    		files:['gruntfile.js','public/controllers/*.js','public/services/*.js','public/components/*.js'],
+    		tasks:['concat:js','mochaTest'],
         options:{
           livereload:true
         },

@@ -1,0 +1,21 @@
+
+
+<navbar-Comp></navbar-Comp>	
+
+<div class="top-chat-banner">
+	<h2>{{channel}}</h2>
+</div>
+
+<div class="main-chat">
+<ui-view></ui-view>
+</div>
+<div class="bottom-chat-area">
+	<md-input-container class="md-block" style="float:left;min-width:70vw;">
+     <label>Chat</label>
+     <textarea ng-model="thischat" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+     </md-input-container>
+     <a href="#" ng-click="submitChat(thischat)">
+     <md-icon md-font-set="material-icons" style="font-size:65px;position: absolute;
+top: 48px;">chat_bubble_outline</md-icon>
+</a>
+</div>
